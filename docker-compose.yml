@@ -1,0 +1,26 @@
+ 
+version: '3'
+services:
+  backend:
+    image: node:12.16.1
+    container_name: backend
+    hostname: OmniStack-backend
+    working_dir: /backend
+    ports:
+        - 3333:3333
+    volumes:
+        - ./backend:/backend
+    command: npm run initial
+    restart: always
+  
+  frontend:
+    image: node:12.16.1
+    container_name: frontend
+    hostname: OmniStack-frontend
+    working_dir: /frontend
+    ports:
+        - 3000:3000
+    volumes:
+        - ./frontend:/frontend
+    command: npm run initial
+    restart: always

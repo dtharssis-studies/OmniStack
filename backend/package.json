@@ -1,0 +1,27 @@
+{
+    "name": "OmniStack",
+    "version": "0.1.0",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/coursesSchoolOfNet/omniStack.git"
+    },
+    "description": "Class for React Native and Node",
+    "main": "index.js",
+    "scripts": {
+        "initial": "npm i && npm run start",
+        "start": "nodemon src/index.js"
+    },
+    "keywords": [],
+    "author": "Danilo Araujo <dtharssis@gmail.com>",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "knex": "^0.20.13",
+        "sqlite3": "^4.1.1"
+    },
+    "devDependencies": {
+        "nodemon": "^1.17.5"
+    }
+}
