@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
-function App() {
+import './global.css';
+
+import Routes from './routes';
+
+// JSX (Javascript XML)
+
+function App() { 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Now I go to react developer
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes />
     </div>
   );
 }
 
 export default App;
+
+
+// // Arra [varlo, funcao de atualizacao] - Conceito de estado
+// const [counter, setCounter] = useState(0);
+
+// {/* <button onClick={increment}>Incrementardor</button> */}
+
+// function increment() {
+//   setCounter(counter + 1);
+// }
