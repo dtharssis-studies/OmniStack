@@ -1,0 +1,12 @@
+npm -> https://docs.npmjs.com/misc/removing-npm.html
+node -> https://askubuntu.com/questions/786015/how-to-remove-nodejs-from-ubuntu-16-04
+expo -> https://stackoverflow.com/questions/52476154/uninstalling-expo-cli
+(install)nvm -> https://stackoverflow.com/questions/10075990/upgrading-node-js-to-latest-version
+-----------------------------------------
+(uninstall) Consultar
+NVM - Verificar o .bashrc (tem um export alias)
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+-----------------------------------------

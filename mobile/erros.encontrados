@@ -1,0 +1,9 @@
+Attempted import error: 'TabActionType' is not exported from './TabRouter'. {
+    https://stackoverflow.com/questions/60212460/how-to-remove-reach-navigation-5-x-warnings
+}
+
+Attempted import error: 'initialWindowSafeAreaInsets' is not exported from 'react-native-safe-area-context'. {
+    Solução foi retirar 'initialWindowSafeAreaInsets' onde era declarado
+    path: mobile/node_modules/@react-navigation/stack/lib/module/views/SafeAreaProviderCompat.js
+    Mas quando reinicia o expo novamente não dá erro.
+}
