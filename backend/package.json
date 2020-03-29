@@ -1,27 +1,32 @@
 {
-    "name": "OmniStack",
-    "version": "0.1.0",
-    "private": true,
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/coursesSchoolOfNet/omniStack.git"
-    },
-    "description": "Class for React Native and Node",
-    "main": "index.js",
-    "scripts": {
-        "initial": "npm i && npm run start",
-        "start": "nodemon src/index.js"
-    },
-    "keywords": [],
-    "author": "Danilo Araujo <dtharssis@gmail.com>",
-    "license": "ISC",
-    "dependencies": {
-        "cors": "^2.8.5",
-        "express": "^4.17.1",
-        "knex": "^0.20.13",
-        "sqlite3": "^4.1.1"
-    },
-    "devDependencies": {
-        "nodemon": "^1.17.5"
-    }
+  "name": "OmniStack",
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coursesSchoolOfNet/omniStack.git"
+  },
+  "description": "Class for React Native and Node",
+  "main": "server.js",
+  "scripts": {
+    "initial": "npm i && npm run start",
+    "start": "nodemon src/server.js",
+    "test": "cross-env NODE_ENV=test jest"
+  },
+  "keywords": [],
+  "author": "Danilo Araujo <dtharssis@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "celebrate": "^12.0.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "jest": "^25.2.4",
+    "nodemon": "^1.17.5",
+    "supertest": "^4.0.2"
+  }
 }

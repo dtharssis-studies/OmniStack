@@ -8,7 +8,7 @@ import './styles.css';
 import logoImg from '../../assets/logo.svg';
 import heroesImg from '../../assets/heroes.png';
 
-export default function Logon() {
+export default function Logon() {   
     const [id, setId] = useState('');
     const history = useHistory();
 
