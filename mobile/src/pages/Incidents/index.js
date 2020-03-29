@@ -26,8 +26,8 @@ export default function Incidents() {
             return;
         }
 
-        if (total > 0 && incident.length === total) {
-            return
+        if (total > 0 && incidents.length === total) {
+            return;
         }
 
         setLoading(true);
@@ -36,7 +36,7 @@ export default function Incidents() {
             params: { page }
         });
 
-        setIncidents([...incidents, ...response.data]);
+        setIncidents([... incidents, ... response.data]);
         setTotal(response.headers['x-total-count']);
         setPage(page + 1);
         setLoading(false);
@@ -64,7 +64,7 @@ export default function Incidents() {
                 style={styles.incidentList}
                 keyExtractor={incident => String(incident.id)}
                 showsVerticalScrollIndicator={false}
-                onEndReached={loadingIncidents}
+                onEndReached={loadIncidents}
                 onEndReachedThreshold={0.2}
                 renderItem={({ item: incident }) => (
                     <View style={styles.incident}>
